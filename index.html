@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>FF Scroll Animate Demo</title>
+<link rel="stylesheet" href="animation.css"/>
+<link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+
+<div class="main">
+	
+	<div class="section white" data-animate="text-pop-up-top">
+		<h1 class="animate">Animate text-pop-up-top</h1>
+	</div>
+	
+	<div class="section black">
+		<h2 class="animate animate-once" data-animate="kenburns-top">Animate me once only</h2>
+	</div>
+	
+	<div class="section yellow">
+		<h2 class="animate" data-animate="text-shadow-pop-top">Animate text-shadow-pop-top</h2>
+	</div>
+	
+	<div class="section red">
+		<h2 class="animate" data-animate="heartbeat">Animate heartbeat</h2>
+	</div>
+	
+	<div class="section black">
+		<h2 class="animate" data-animate="slide-rotate-hor-top">Animate slide-rotate-hor-top</h2>
+	</div>
+	
+	<div class="section yellow">
+		<h2 class="animate-2">Animate Default Setting</h2>
+	</div>
+	
+	<div class="section white">
+		<h2 class="animate-2">How's it going!</h2>
+	</div>
+	
+	<div class="section cyan">
+		<h2 class="animate-2" data-animate="heartbeat">Heyo!</h2>
+	</div>
+	
+	<div class="section orange">
+		<h2 class="animate-2" data-animate="slide-rotate-hor-top">Bye!</h2>
+	</div>
+	
+	<div class="section white">
+		<h2 class="animate-2" data-animate="kenburns-top">See yah!</h2>
+	</div>
+	
+	<div class="section black">
+		<h2 class="animate-2">Laters!</h2>
+	</div>
+	
+	<div class="section yellow">
+		<h2 class="animate-2">Cheers!</h2>
+	</div>
+	
+</div>
+
+<script src="ff-scroll-animate.js"></script>
+<script>
+
+FFScrollAnimate({
+	selector: '.animate',
+	animate_class: 'blur-out-contract',
+	offset: 50,
+	repeat: true,
+}).start();
+
+FFScrollAnimate({
+	selector: '.animate-2',
+	animate_class: 'blur-out-contract',
+	offset: 50,
+	repeat: false,
+	on_complete: function(){
+		// with callback function on complete
+		alert('Animation Set 2 complete');
+	},
+}).start();
+</script>
+</body>
+</html>
