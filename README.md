@@ -1,5 +1,4 @@
 FF Scroll Animate v1.1
-by Alistair Ponce
 
 Animates elements on window scroll using css class, this is using plain/vanilla JS. 
 
