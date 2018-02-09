@@ -5,6 +5,7 @@ Animates elements on window scroll using css class, this is using plain/vanilla 
 
 * Supports inline options per element
 * Removes scroll and resize events on animation complete, if all elements are done animating and no element has animate repeat
+* You can use this site as reference for css animations: http://animista.net/
 
 Options:
 
