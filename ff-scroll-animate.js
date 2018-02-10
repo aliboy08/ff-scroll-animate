@@ -4,14 +4,6 @@
  * license: http://www.opensource.org/licenses/mit-license.php
  */
 var FFScrollAnimate = function(options){
-	
-	// If all elements are animated, event handlers will be removed
-	// Options:
-	// selector: string, element selector using "." or "#"
-	// animate_class: string, css class used to animate, can be set inline in data-animate attribute
-	// offset: int, offset position before animation activates
-	// repeat: boolean, default = 0, animation repeats when element is in view again, can be set with class name "animate-repeat" for true or "animate-once" for false
-	// on_complete: function, callback function when all elements finish animating, if no element has repeat
 	 
 	// Defaults
 	if( typeof options.offset === 'undefined' ) options.offset = 0;
