@@ -6,7 +6,9 @@ Animates elements on window scroll using css class, this is using plain/vanilla 
 * Removes scroll and resize events on animation complete, if all elements are done animating and no element has animate repeat
 * You can use this site as reference for css animations: http://animista.net/
 
-demo https://aliboy08.github.io/ff-scroll-animate/
+
+*demo* https://aliboy08.github.io/ff-scroll-animate/
+
 
 ```
 Options: {
